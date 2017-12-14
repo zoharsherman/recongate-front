@@ -75,7 +75,7 @@ export default class RecongateTextArea extends React.Component {
                 //with min rows no scroll so setting to min
                 rows = this.props.minrows;
             }
-            this.setState({rows, value: this.myTextArea.value});
+            this.setState({style: {height: hiddenTextarea.clientHeight}, value: this.myTextArea.value});
         }
     }
 
